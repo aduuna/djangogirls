@@ -4,6 +4,11 @@
 
 <div class="content container">
     <div class="post">
+        <a href="{% url 'post_edit' pk=post.pk %}">
+        <button class="btn float-right">
+            <i class="fa fa-edit"></i>
+        </button>
+        </a>
         <h1><a>{{ post.title }}</a></h1>
         <div class="date">
             <p>{{ post.published_date }}</p>
