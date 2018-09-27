@@ -1,0 +1,15 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>MY AWESOME website</h1>
+        <div>
+        {% for post in posts %}
+            <h1><a href="#">{{ post.title }}</a></h1>
+            <p>{{ post.published_date }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
+        {% endfor %}
+        </div>
+    </body>
+</html>
